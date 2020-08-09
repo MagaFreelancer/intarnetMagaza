@@ -1,0 +1,18 @@
+/* line 1, base/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, base/_base.scss */
+body {
+  background: #fafafa;
+}
+
+/* line 1, blocks/_header.scss */
+.header {
+  background: #ffffff;
+  height: 300px;
+}
