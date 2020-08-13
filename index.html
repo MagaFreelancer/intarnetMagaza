@@ -16,7 +16,7 @@
             <div class="header__logo">
                 QUANTUM
             </div>
-            <form class="header__search">
+            <form class="header__search" type="GET">
                 <div class="header__search-input-wrapper">
                     <input class="header__search-input" type="text" placeholder="Search goods">
                 </div>
@@ -25,18 +25,18 @@
                     <div data-select class="header-select">
                         <div data-select-title class="header-select__title">CATEGORY</div>
                         <div class="header-select__dropdown hidden">
-                            <div data-select-item="Mobile" class="header-select__dropdown-item">Mobile</div>
-                            <div data-select-item="Tablet" class="header-select__dropdown-item">Tablet</div>
-                            <div data-select-item="Laptop" class="header-select__dropdown-item">Laptop</div>
+                            <div data-select-item="mobile" class="header-select__dropdown-item">Mobile</div>
+                            <div data-select-item="tablet" class="header-select__dropdown-item">Tablet</div>
+                            <div data-select-item="laptop" class="header-select__dropdown-item">Laptop</div>
                         </div>
                     </div>
 
-                    <!-- <select name="" id="">
-                        <option value="">CATEGORY</option>
-                        <option value="">Mobile</option>
-                        <option value="">Tablet</option>
-                        <option value="">Laptop</option>
-                    </select> -->
+                    <select class="hidden" name="select" id="selectReal">
+                        <option value="none">CATEGORY</option>
+                        <option value="mobile">Mobile</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="laptop">Laptop</option>
+                    </select>
                 </div>
                 <div class="header__search-button-wrapper">
                     <button class="header__search-button" type="submit">
@@ -44,8 +44,19 @@
                     </button>
                 </div>
             </form>
-            <div class="header__buttons">
-
+            <div class="header__links">
+                <a href="#" class="header-link header-link--notify">
+                    <span class="header-link__icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="header-link__text">2 items</span>
+                </a>
+                <a href="#" class="header-link ">
+                    <span class="header-link__icon"><i class="far fa-heart"></i></span>
+                    <span class="header-link__text">Wish List</span>
+                </a>
+                <a href="#" class="header-link ">
+                    <span class="header-link__icon"><i class="far fa-user"></i></span>
+                    <span class="header-link__text">Sing in</span>
+                </a>
             </div>
         </div>
     </header>
