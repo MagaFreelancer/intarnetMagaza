@@ -40,7 +40,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 41px 0 23px;
+  padding: 30px 41px 38px 23px;
 }
 
 .header__logo {
@@ -128,6 +128,10 @@ body {
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.header__nav {
+  border-top: 2px solid #f5f5f5;
 }
 
 .header-select {
@@ -257,6 +261,95 @@ body {
 .header-link__text {
   font-size: 14px;
   font-weight: 500;
-  line-height: 2.14;
+  line-height: 1;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 2px solid #f5f5f5;
+  border-right: 2px solid #f5f5f5;
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.header-nav__categories {
+  border-right: 2px solid #f5f5f5;
+  width: 200px;
+}
+
+.header-nav__deals {
+  border-right: 2px solid #f5f5f5;
+  padding-right: 38px;
+  padding-left: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.header-nav__link {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.header-nav__link:not(:last-child) {
+  margin-right: 35px;
+}
+
+.header-nav__link:hover {
+  color: #1875f0;
+}
+
+.header-mega-menu-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 0 40px 0 30px;
+  height: 100%;
+}
+
+.header-mega-menu-link:hover .header-mega-menu-link__text {
+  color: #1875f0;
+}
+
+.header-mega-menu-link:hover svg {
+  fill: #1875f0;
+}
+
+.header-mega-menu-link__icon {
+  margin-right: 20px;
+}
+
+.header-mega-menu-link__icon svg {
+  fill: gray;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.header-mega-menu-link__text {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
 }
 /*# sourceMappingURL=main.css.map */

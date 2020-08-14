@@ -11,7 +11,7 @@
         margin-right:35px ;
     }
     &:hover {
-        color: #1875f0;
+        color: $blue;
     }
 }
 .header-link--notify .header-link__icon::after {
@@ -21,7 +21,7 @@
     right: -7;
     width: 6px;
     height: 6px;
-    background: #1875f0;
+    background: $blue;
     border-radius: 50%;
 }
 .header-link__icon {
@@ -36,5 +36,5 @@
 .header-link__text {
     font-size: 14px;
     font-weight: 500;
-    line-height: 2.14;
+    line-height: 1;
 }

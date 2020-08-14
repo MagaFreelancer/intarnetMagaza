@@ -1,0 +1,30 @@
+.header-mega-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 40px 0 30px;
+    height: 100%;
+    
+    &:hover {
+        .header-mega-menu-link__text {
+            color: $blue;
+        }
+        svg {
+            fill: $blue;
+        }
+    } 
+}
+.header-mega-menu-link__icon {
+    margin-right: 20px;
+    svg {
+        fill:gray;
+        transition: .2s linear;
+    }
+}
+.header-mega-menu-link__text {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    transition: .2s linear;
+}
