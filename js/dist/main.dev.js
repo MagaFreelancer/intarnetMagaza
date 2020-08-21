@@ -1,0 +1,8 @@
+"use strict";
+
+$(document).ready(function () {
+  $("#carousel-header").owlCarousel({
+    items: 1,
+    nav: true
+  });
+});
