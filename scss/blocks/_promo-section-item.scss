@@ -1,0 +1,38 @@
+.promo-section-item-link-wrapper {
+    display: block;
+}
+
+.promo-section-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    height: 330px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+    border-radius: 6px;
+    transition:box-shadow .2s linear;
+    &:hover {
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.150);
+
+    }
+}
+
+.promo-section-item__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #666666;
+    line-height: 1.5;
+}
+
+.promo-section-item__subtitle {
+    margin-bottom: 40px;
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.promo-section-item__img {}
