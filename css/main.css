@@ -733,4 +733,56 @@ button.owl-next {
   background-color: #3b4b48;
   background: url("./../img/promo/2.jpg");
 }
+
+/*small block*/
+.promo-section-item-link-wrapper--column:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.promo-section-item--small {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  height: 150px;
+  text-align: left;
+}
+
+.promo-section-item--small .promo-section-item__title {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2.14;
+  margin: 0;
+}
+
+.promo-section-item__img-cell {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 116px;
+  margin-right: 25px;
+  height: 100%;
+}
+
+.promo-section-item__title-cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=main.css.map */
