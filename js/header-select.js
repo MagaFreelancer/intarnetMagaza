@@ -1,7 +1,7 @@
 const selectAllElements = document.querySelectorAll('[data-select]');
 
 selectAllElements.forEach(item => {
-    item.addEventListener('click', function () {
+    item.addEventListener('click', function (event) {
         const realSelect = this.nextElementSibling;
 
         if (event.target.hasAttribute('data-select-item')) {

@@ -785,4 +785,22 @@ button.owl-next {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.navigation {
+  height: 300px;
+  background-color: orange;
+}
+
+.main__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__column-left {
+  width: 255px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 30px;
+}
 /*# sourceMappingURL=main.css.map */
