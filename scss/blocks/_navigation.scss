@@ -1,14 +1,36 @@
 .navigation {
     height: 300px;
-    background-color: orange;
+    @extend %mixin-card
 }
+
 .navigation__list {
+    list-style: none;
 }
+
 .navigation__item {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: 2px solid #f5f5f5;
 }
+
 .navigation__item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 50px;
+    margin-right: 5px;
 }
+
 .navigation__item-title {
+    color: #808080;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1;
 }
+
 .navigation__item-arrow {
+    margin-left: auto;
+    padding-right: 20px;
 }

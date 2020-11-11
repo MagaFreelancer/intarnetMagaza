@@ -12,12 +12,12 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
     background: #ffffff;
     border-radius: 6px;
-    transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear, transform .2s linear;
     text-align: center;
 
     &:hover {
         box-shadow: 0 3px 25px rgba(0, 0, 0, 0.230);
-
+        transform: translateY(-5px);
     }
 }
 
