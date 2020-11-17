@@ -1,5 +1,5 @@
 .main-content {
-
+    
 }
 
 .main__row {
@@ -10,8 +10,12 @@
     width: 255px;
     flex-shrink: 0;
     margin-right: 30px;
+
+    & > * + * {
+        margin-top: 30px;
+    }
 }
 
 .main__column-right {
-
+    flex-grow: 1;
 }

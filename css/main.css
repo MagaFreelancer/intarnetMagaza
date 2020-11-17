@@ -1,4 +1,4 @@
-.navigation {
+.navigation, .info-block, .tabs {
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   background: #ffffff;
@@ -800,6 +800,29 @@ button.owl-next {
           align-items: center;
 }
 
+.main__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__column-left {
+  width: 255px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 30px;
+}
+
+.main__column-left > * + * {
+  margin-top: 30px;
+}
+
+.main__column-right {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .navigation__list {
   list-style: none;
 }
@@ -817,6 +840,10 @@ button.owl-next {
   cursor: pointer;
   -webkit-transition: color .2s linear;
   transition: color .2s linear;
+}
+
+.navigation__item:last-child {
+  border-bottom: none;
 }
 
 .navigation__item .navigation__icon {
@@ -866,16 +893,67 @@ button.owl-next {
   padding-right: 20px;
 }
 
-.main__row {
+.info-block {
+  padding: 30px 20px;
+  height: 336px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.main__column-left {
-  width: 255px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  margin-right: 30px;
+.info-block__title {
+  color: #666666;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.info-block__suptitle {
+  color: #d1d1d1;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2.14;
+}
+
+.tabs {
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+
+.tabs__btn {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #808080;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tabs__btn + .tabs__btn {
+  margin-left: 50px;
+}
+
+.tabs__btn--active {
+  color: #1875f0;
+  border-bottom: 2px solid #1875f0;
 }
 /*# sourceMappingURL=main.css.map */

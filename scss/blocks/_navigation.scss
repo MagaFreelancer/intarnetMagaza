@@ -15,6 +15,10 @@
     cursor: pointer;
     transition: color .2s linear;
 
+    &:last-child {
+        border-bottom: none;
+    }
+
     .navigation__icon {
         fill: #ccc;
         transition: fill .2s linear;
