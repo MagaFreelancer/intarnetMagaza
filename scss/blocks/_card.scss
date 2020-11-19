@@ -1,10 +1,17 @@
-.cards-wrapper {}
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & >* {
+        margin-bottom: 30px;
+    }
+}
 
 .card {
     @extend %mixin-card;
     padding: 20px;
     width: 255px;
-
+    margin-bottom: 20px;
 
 }
 
@@ -12,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 24px;
 }
 
 .card__sale {
@@ -43,10 +51,75 @@
         fill: #d8d6d6;
         transition: .2s linear;
     }
-    &:hover svg{
+
+    &:hover svg {
         fill: $blue
     }
+
     &+& {
         margin-left: 25px;
+    }
+}
+
+.card__img {
+    height: 160px;
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+.card__title {
+    margin-bottom: 25px;
+
+    color: #666666;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    text-align: center;
+}
+
+.card__rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 29px;
+
+    &>*+* {
+        margin-left: 4px;
+    }
+}
+.card__rating-value {
+    margin-left: 15px;
+    color: #b3b3b3;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.67;
+    letter-spacing: 0.12px; 
+}
+
+.card__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.card__price {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: 0.16px;
+}
+
+.card__cart {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+
+    svg {
+        fill: #e6e4e4;
+        transition: fill .2s linear;
+    }
+
+    &:hover svg {
+        fill: $blue
     }
 }
