@@ -1,0 +1,26 @@
+.nav-footer {
+}
+.nav-footer__list {
+    list-style: none;
+    display: flex;
+
+}
+.nav-footer__item {
+    & + & {
+        margin-left: 60px;
+    }
+    i {
+        font-size: 13px;
+    }
+
+}
+.nav-footer__link {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.88;
+    &:hover {
+        color: $blue;
+        text-decoration: none;
+    }
+}
