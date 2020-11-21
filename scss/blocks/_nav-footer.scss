@@ -10,10 +10,11 @@
         margin-left: 60px;
     }
     i {
-        font-size: 13px;
+        font-size: 11px;
     }
 
 }
+
 .nav-footer__link {
     color: #666666;
     font-size: 16px;
@@ -23,4 +24,7 @@
         color: $blue;
         text-decoration: none;
     }
+}
+.nav-footer__link--dropdown {
+    
 }

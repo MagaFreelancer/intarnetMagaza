@@ -1,0 +1,20 @@
+.socail {
+    display: flex;
+    align-items: center;
+}
+.social__item {
+    display: inline-block;
+    width: 16px;
+
+    & + & {
+        margin-left: 32px;
+    }
+    i {
+        color: #666;
+        font-size: 18px;
+        transition: color .2s linear;
+    }
+    &:hover i{
+        color: $blue;
+    }
+}
